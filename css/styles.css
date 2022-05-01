@@ -129,3 +129,37 @@ section {
   z-index: -1;
   transform: translateZ(-10px) scale(2);
 }
+
+@media screen and (max-width: 490px) {
+  p {
+    width: 100%;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 5px;
+    margin: 3px;
+    background-color: white;
+  }
+
+  .parallax h1 {
+    font-size: 4rem;
+  }
+
+  .section1 h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  .background {
+    object-position: left;
+  }
+}
