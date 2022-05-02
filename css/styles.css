@@ -13,9 +13,10 @@ header {
   width: 100%;
   overflow-y: hidden;
   position: fixed;
+
   z-index: 2;
 }
-header nav {
+nav {
   background: linear-gradient(
     75deg,
     rgb(5, 4, 3) 10%,
@@ -87,6 +88,7 @@ section {
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+  z-index: 1;
 }
 
 .parallax {
@@ -134,6 +136,36 @@ section {
   p {
     width: 100%;
   }
+  nav {
+    height: 100px;
+  }
+
+  header {
+    overflow-y: visible;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: linear-gradient(
+      75deg,
+      rgb(5, 4, 3) 10%,
+      rgb(105, 80, 26) 30%,
+      rgb(26, 26, 34) 100%
+    );
+
+    border-radius: 40px;
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in;
+    transform: translateX(110%);
+    z-index: 9;
+  }
 
   .logo {
     margin: 0;
@@ -141,6 +173,7 @@ section {
 
   .burger {
     display: block;
+    z-index: 9;
   }
 
   .burger div {
@@ -161,5 +194,8 @@ section {
 
   .background {
     object-position: left;
+  }
+  .nav-active {
+    transform: translateX(0%);
   }
 }
