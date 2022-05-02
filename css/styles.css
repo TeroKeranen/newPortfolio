@@ -17,12 +17,7 @@ header {
   z-index: 2;
 }
 nav {
-  background: linear-gradient(
-    75deg,
-    rgb(5, 4, 3) 10%,
-    rgb(105, 80, 26) 30%,
-    rgb(26, 26, 34) 100%
-  );
+  background: rgb(37, 35, 35);
   padding: 30px 10px;
   width: 100%;
   display: flex;
@@ -131,6 +126,12 @@ section {
   z-index: -1;
   transform: translateZ(-10px) scale(2);
 }
+.scroll {
+  background-color: white;
+}
+.scroll2 {
+  color: black;
+}
 
 @media screen and (max-width: 490px) {
   p {
@@ -146,12 +147,7 @@ section {
 
   .nav-links {
     position: absolute;
-    background: linear-gradient(
-      75deg,
-      rgb(5, 4, 3) 10%,
-      rgb(105, 80, 26) 30%,
-      rgb(26, 26, 34) 100%
-    );
+    background: rgb(37, 35, 35);
 
     border-radius: 40px;
     margin: 0;
@@ -166,6 +162,9 @@ section {
     transform: translateX(110%);
     z-index: 9;
   }
+  .scroll4 {
+    background: white;
+  }
 
   .logo {
     margin: 0;
@@ -176,13 +175,15 @@ section {
     z-index: 9;
   }
 
-  .burger div {
+  .burger-div {
     width: 25px;
     height: 5px;
     margin: 3px;
     background-color: white;
   }
-
+  .scroll3 {
+    background-color: black;
+  }
   .parallax h1 {
     font-size: 4rem;
   }
