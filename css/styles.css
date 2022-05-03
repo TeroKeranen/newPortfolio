@@ -162,6 +162,10 @@ section {
     transform: translateX(110%);
     z-index: 9;
   }
+
+  .title h1 {
+    font-size: 2rem;
+  }
   .scroll4 {
     background: white;
   }
@@ -185,7 +189,7 @@ section {
     background-color: black;
   }
   .parallax h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .section1 h1,
