@@ -10,39 +10,47 @@ const slideIt = function () {
   });
 };
 
-const container = document.querySelector(".container");
-const myNav = document.querySelector(".navi");
-const logo = document.querySelector(".logo");
-const burgerDiv = document.querySelectorAll(".burger-div");
-const nav1 = document.querySelectorAll(".linkit");
+const container = document.querySelector(".container"); // Selecting container
+const myNav = document.querySelector(".navi"); // selecting whole navbar
+const logo = document.querySelector(".logo"); // selectin navbar logo
+const burgerDiv = document.querySelectorAll(".burger-div"); // selecting navbar burger divs (mobile)
+const nav1 = document.querySelectorAll(".linkit"); // selecting navbar links
 
 container.onscroll = function () {
   "use strict";
   /* If scrolling 280px or more navbar changes its colour */
   if (container.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
-    myNav.classList.add("scroll");
-    logo.classList.add("scroll2");
-    nav.classList.add("scroll4");
+    // Changing nav background to white when scrolling down
+    myNav.classList.add("NavScroll");
+    // changing logos background to white when scrolling down
+    logo.classList.add("NavTextScroll");
+    // Mobile version changing nav links background to white when scrolling down
+    nav.classList.add("mobileNavBackground");
 
-    // changing burger menu colour
+    // iterate burger divs and change burger color to black
     burgerDiv.forEach(function (item) {
-      item.classList.add("scroll3");
+      item.classList.add("burgerToBlack");
     });
 
+    // iterate all navbar links and changin the color to black
     nav1.forEach(function (item) {
-      item.classList.add("scroll2");
+      item.classList.add("NavTextScroll");
     });
   } else {
-    myNav.classList.remove("scroll");
-    logo.classList.remove("scroll2");
-    nav.classList.remove("scroll4");
+    // changing navbar background back to black
+    myNav.classList.remove("NavScroll");
+    // Changing logo back to white
+    logo.classList.remove("NavTextScroll");
+    // changing mobile background back to black
+    nav.classList.remove("mobileNavBackground");
 
+    // changing navbar links back to white
     nav1.forEach(function (item) {
-      item.classList.remove("scroll2");
+      item.classList.remove("NavTextScroll");
     });
-
+    // Changing navbar burger back to white
     burgerDiv.forEach(function (item) {
-      item.classList.remove("scroll3");
+      item.classList.remove("burgerToBlack");
     });
   }
 };

@@ -59,7 +59,7 @@ section {
   color: white;
 }
 
-/* Mobiili laitteen burger icon, otetaan tässä pois käytöstä*/
+/* burger to mobile devices, not showing on big screen*/
 .burger {
   display: none;
 }
@@ -70,13 +70,13 @@ section {
   font-size: 4rem;
   margin-left: 30px;
 }
-
+/* h1 in container*/
 .title {
   font-size: 7rem;
   color: white;
   text-shadow: 0 0 5px black;
 }
-
+/* First container*/
 .container {
   width: 100%;
   height: 100vh;
@@ -96,6 +96,17 @@ section {
   z-index: -1;
 }
 
+/* image */
+.background {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
+/* Information content*/
 .content1 {
   display: flex;
   flex-direction: column;
@@ -106,6 +117,7 @@ section {
   margin-top: 40px;
 }
 
+/* parallax photo*/
 .content2 {
   display: flex;
   justify-content: center;
@@ -118,18 +130,11 @@ section {
   font-size: 3rem;
 }
 
-.background {
-  position: absolute;
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  transform: translateZ(-10px) scale(2);
-}
-.scroll {
+/* When scrolling down, javascript changes background to */
+.NavScroll {
   background-color: white;
 }
-.scroll2 {
+.NavTextScroll {
   color: black;
 }
 
@@ -190,7 +195,7 @@ section {
   .title h1 {
     font-size: 2rem;
   }
-  .scroll4 {
+  .mobileNavBackground {
     background: white;
   }
 
@@ -209,7 +214,7 @@ section {
     margin: 3px;
     background-color: white;
   }
-  .scroll3 {
+  .burgerToBlack {
     background-color: black;
   }
   .parallax h1 {
