@@ -110,10 +110,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/matrix.jpg);
+  background-image: url(../img/sun.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 50%;
+  height: 30%;
   color: white;
   font-size: 3rem;
 }
@@ -131,6 +131,30 @@ section {
 }
 .scroll2 {
   color: black;
+}
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.skills h2 {
+  margin-bottom: 60px;
+  font-size: 6rem;
+}
+
+.taidot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.drid-taidot img {
 }
 
 @media screen and (max-width: 490px) {

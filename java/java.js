@@ -1,7 +1,8 @@
-/* Hambugher menu start */
+/* select hamburger menus classes */
 const nav = document.querySelector(".nav-links");
 const ham = document.querySelector(".burger");
 
+// Function that open navbars link list
 const slideIt = function () {
   ham.addEventListener("click", function () {
     nav.classList.toggle("nav-active");
@@ -17,10 +18,13 @@ const nav1 = document.querySelectorAll(".linkit");
 
 container.onscroll = function () {
   "use strict";
+  /* If scrolling 280px or more navbar changes its colour */
   if (container.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
     myNav.classList.add("scroll");
     logo.classList.add("scroll2");
     nav.classList.add("scroll4");
+
+    // changing burger menu colour
     burgerDiv.forEach(function (item) {
       item.classList.add("scroll3");
     });
