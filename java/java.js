@@ -12,11 +12,11 @@ const slideIt = function () {
   });
 };
 
-const container = document.querySelector(".container"); // Selecting container
-const myNav = document.querySelector(".navi"); // selecting whole navbar
-const logo = document.querySelector(".logo"); // selectin navbar logo
-const burgerDiv = document.querySelectorAll(".burger-div"); // selecting navbar burger divs (mobile)
-const nav1 = document.querySelectorAll(".linkit"); // selecting navbar links
+const container = document.querySelector(".container");           // Selecting container
+const myNav = document.querySelector(".navi");                    // selecting whole navbar
+const logo = document.querySelector(".logo");                     // selectin navbar logo
+const burgerDiv = document.querySelectorAll(".burger-div");       // selecting navbar burger divs (mobile)
+const nav1 = document.querySelectorAll(".linkit");                // selecting navbar links
 
 
 
@@ -25,36 +25,36 @@ container.onscroll = function () {
   "use strict";
   /* If scrolling 280px or more navbar changes its colour */
   if (container.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
-    // Changing nav background to white when scrolling down
-    myNav.classList.add("NavScroll");
-    // changing logos background to white when scrolling down
-    logo.classList.add("NavTextScroll");
-    // Mobile version changing nav links background to white when scrolling down
-    nav.classList.add("mobileNavBackground");
+    
+    myNav.classList.add("NavScroll");                 // Changing nav background to white when scrolling down
+    
+    logo.classList.add("NavTextScroll");            // changing logos background to white when scrolling down
+    
+    nav.classList.add("mobileNavBackground");         // Mobile version changing nav links background to white when scrolling down
 
-    // iterate burger divs and change burger color to black
-    burgerDiv.forEach(function (item) {
+    
+    burgerDiv.forEach(function (item) {               // iterate burger divs and change burger color to black
       item.classList.add("burgerToBlack");
     });
 
-    // iterate all navbar links and changin the color to black
-    nav1.forEach(function (item) {
+    
+    nav1.forEach(function (item) {                    // iterate all navbar links and changin the color to black
       item.classList.add("NavTextScroll");
     });
   } else {
-    // changing navbar background back to black
-    myNav.classList.remove("NavScroll");
-    // Changing logo back to white
-    logo.classList.remove("NavTextScroll");
-    // changing mobile background back to black
-    nav.classList.remove("mobileNavBackground");
+    
+    myNav.classList.remove("NavScroll");              // changing navbar background back to black
+    
+    logo.classList.remove("NavTextScroll");           // Changing logo back to white
+    
+    nav.classList.remove("mobileNavBackground");      // changing mobile background back to black
 
-    // changing navbar links back to white
-    nav1.forEach(function (item) {
+    
+    nav1.forEach(function (item) {                    // changing navbar links back to white
       item.classList.remove("NavTextScroll");
     });
-    // Changing navbar burger back to white
-    burgerDiv.forEach(function (item) {
+    
+    burgerDiv.forEach(function (item) {               // Changing navbar burger back to white
       item.classList.remove("burgerToBlack");
     });
   }
@@ -74,6 +74,7 @@ function menuLink(e) {
 
   sectionEl.scrollIntoView({behavior: "smooth"})
 
+  //when clicking mobile navbar link this move links aside
   nav.classList.remove('nav-active');
 }
 
