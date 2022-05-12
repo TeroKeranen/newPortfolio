@@ -139,6 +139,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   width: 100%;
   background: linear-gradient(
     75deg,
@@ -161,9 +162,11 @@ section {
   width: 100%;
   display:flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   text-align: center;
   padding-bottom: 3rem;
   color: white;
+  
   
 }
 
@@ -310,5 +313,17 @@ section {
 
   .taidot img {
     width: 50%;
+  }
+
+  .projects {
+    height: auto;
+  }
+  .automerkki,
+  .earth,
+  .school {
+    margin-bottom: 40px;
+  }
+  .tekeleet img {
+    width: 40%;
   }
 }
