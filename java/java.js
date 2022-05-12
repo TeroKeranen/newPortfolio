@@ -1,6 +1,8 @@
 /* select hamburger menus classes */
 const nav = document.querySelector(".nav-links");
 const ham = document.querySelector(".burger");
+const joumaan = document.querySelectorAll('header nav a');
+
 
 // Function that open navbars link list
 const slideIt = function () {
@@ -16,7 +18,10 @@ const logo = document.querySelector(".logo"); // selectin navbar logo
 const burgerDiv = document.querySelectorAll(".burger-div"); // selecting navbar burger divs (mobile)
 const nav1 = document.querySelectorAll(".linkit"); // selecting navbar links
 
+
+
 container.onscroll = function () {
+  
   "use strict";
   /* If scrolling 280px or more navbar changes its colour */
   if (container.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
@@ -55,4 +60,26 @@ container.onscroll = function () {
   }
 };
 
+
+
 slideIt();
+
+
+
+/// Smoot navbar movement in mobile version
+function menuLink(e) {
+  e.preventDefault();
+
+  let sectionEl = document.querySelector(this.hash);
+
+  sectionEl.scrollIntoView({behavior: "smooth"})
+
+  nav.classList.remove('nav-active');
+}
+
+
+for (let i = 0; i < joumaan.length; i++) {
+  joumaan[i].addEventListener('click', menuLink);
+}
+
+

@@ -59,6 +59,9 @@ section {
   color: white;
 }
 
+
+
+
 /* burger to mobile devices, not showing on big screen*/
 .burger {
   display: none;
@@ -130,9 +133,23 @@ section {
   font-size: 3rem;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.projects-container img {
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 30px;
+}
+
 /* When scrolling down, javascript changes background to */
 .NavScroll {
   background-color: white;
+  height: 100px;
 }
 .NavTextScroll {
   color: black;
@@ -159,9 +176,6 @@ section {
   align-items: center;
 }
 
-.drid-taidot img {
-}
-
 @media screen and (max-width: 490px) {
   p {
     width: 100%;
@@ -174,13 +188,17 @@ section {
     overflow-y: visible;
   }
 
+  
+
+  
+
   .nav-links {
     position: absolute;
     background: rgb(37, 35, 35);
 
     border-radius: 40px;
     margin: 0;
-    height: 1000px;
+    height: 500px;
     width: 100%;
     top: 0;
     right: 0;
@@ -189,7 +207,13 @@ section {
     justify-content: center;
     transition: transform 0.5s ease-in;
     transform: translateX(110%);
+    
     z-index: 9;
+  }
+
+  
+  .nav-links li {
+    margin-bottom: 20px;
   }
 
   .title h1 {
@@ -197,6 +221,7 @@ section {
   }
   .mobileNavBackground {
     background: white;
+    
   }
 
   .logo {
@@ -231,5 +256,9 @@ section {
   }
   .nav-active {
     transform: translateX(0%);
+  }
+
+  .taidot img {
+    width: 50%;
   }
 }
