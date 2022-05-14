@@ -229,6 +229,49 @@ section {
   align-items: center;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background: linear-gradient(
+    75deg,
+    rgb(0, 0, 0) 1%,
+    rgb(107, 124, 108) 60%,
+    rgb(10, 10, 10) 110%
+  );
+  overflow: hidden;
+  height: 300px;
+  
+}
+
+.contact h2 {
+  
+  font-size: 3rem;
+  color: white;
+  
+}
+
+.how-to {
+  display: flex;
+  justify-content:space-evenly;
+  width: 60%;
+  margin-top: 70px;
+ 
+  
+}
+
+
+
+.how-to img {
+  width: 5rem;
+  cursor: pointer;
+  
+}
+
+
 @media screen and (max-width: 490px) {
   p {
     width: 100%;
@@ -325,5 +368,9 @@ section {
   }
   .tekeleet img {
     width: 40%;
+  }
+
+  .how-to img {
+    width: 2rem;
   }
 }
