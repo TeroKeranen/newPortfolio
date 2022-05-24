@@ -312,7 +312,7 @@ section {
 }
 
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 890px) {
   p {
     width: 100%;
   }
