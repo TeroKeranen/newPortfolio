@@ -228,6 +228,12 @@ section {
 }
 
 /* When scrolling down, javascript changes background to */
+
+.hide {
+  display: none;
+}
+
+
 .NavScroll {
   background-color: white;
   height: 100px;
