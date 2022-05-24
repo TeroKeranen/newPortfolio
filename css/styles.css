@@ -288,7 +288,11 @@ section {
   
 }
 
-.contact p {
+.info {
+  width: 50%;
+}
+
+.info p {
   color: white;
   font-size: 1.9rem;
 }
@@ -421,11 +425,15 @@ section {
     margin-bottom: 40px;
     border-bottom: 3px solid black;
   }
+
+  .info {
+    width: 100%;
+  }
   
-  .contact p {
+  .info p {
     display: flex;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   
   }
   .tekeleet img {
