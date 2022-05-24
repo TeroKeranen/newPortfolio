@@ -56,8 +56,10 @@ section {
   );
   font-size: 2rem;
   padding: 2rem;
+  
   color: white;
 }
+
 
 
 
@@ -98,6 +100,32 @@ section {
   height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
+}
+.span-title {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.parallax ul {
+  display: flex;
+  margin-right: 30px;
+}
+.parallax ul li {
+  color: white;
+  list-style-type: none;
+  letter-spacing: 10px;
+  font-size: 5.5rem;
+  transition: 1.5s;
+
+}
+
+.parallax .jesus li {
+  transform: rotate(45deg) translateY(-200px);
+  opacity: 0;
+  filter: blur(20px);
 }
 
 /* image */
@@ -228,6 +256,13 @@ section {
   justify-content: center;
   align-items: center;
 }
+.taidot img {
+  width: 17rem;
+}
+
+.taidot img:first-child {
+  width: 21rem;
+}
 
 .contact {
   display: flex;
@@ -266,7 +301,7 @@ section {
 
 
 .how-to img {
-  width: 5rem;
+  width: 3rem;
   cursor: pointer;
   
 }
@@ -338,8 +373,14 @@ section {
   .burgerToBlack {
     background-color: black;
   }
-  .parallax h1 {
+  .span-title {
+    flex-direction: column;
+    
+    
+  }
+  .span-title ul li {
     font-size: 3rem;
+    
   }
 
   .section1 h1,

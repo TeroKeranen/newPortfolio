@@ -17,6 +17,7 @@ const myNav = document.querySelector(".navi");                    // selecting w
 const logo = document.querySelector(".logo");                     // selectin navbar logo
 const burgerDiv = document.querySelectorAll(".burger-div");       // selecting navbar burger divs (mobile)
 const nav1 = document.querySelectorAll(".linkit");                // selecting navbar links
+const span = document.querySelector('.span-title');
 
 
 
@@ -24,6 +25,11 @@ container.onscroll = function () {
   
   "use strict";
   /* If scrolling 280px or more navbar changes its colour */
+
+  if (container.scrollTop >= 50 ||  document.documentElement.scrollTop >= 50){
+    span.classList.add('jesus');
+
+  }
   if (container.scrollTop >= 280 || document.documentElement.scrollTop >= 280) {
     
     myNav.classList.add("NavScroll");                 // Changing nav background to white when scrolling down
@@ -48,6 +54,7 @@ container.onscroll = function () {
     logo.classList.remove("NavTextScroll");           // Changing logo back to white
     
     nav.classList.remove("mobileNavBackground");      // changing mobile background back to black
+    span.classList.remove('jesus');
 
     
     nav1.forEach(function (item) {                    // changing navbar links back to white
